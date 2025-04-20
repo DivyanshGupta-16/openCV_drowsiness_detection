@@ -1,4 +1,4 @@
-# 💩 Drowsiness Detection System using OpenCV & Mediapipe
+# 🚙🚨😴Drowsiness Detection System using OpenCV & Mediapipe
 
 ## 📸 Overview  
 This project is a **real-time drowsiness detection system** built using **OpenCV**, **Mediapipe**, and **Python**.  
@@ -110,11 +110,6 @@ Drowsiness detected at 2025-04-20 18:55:07
 - [Mediapipe](https://mediapipe.dev/)  
 - [Pygame](https://www.pygame.org/news)  
 - [SciPy](https://scipy.org/)  
-
----
-
-## 📃 License  
-This project is licensed under the **MIT License**.
 
 ---
 
