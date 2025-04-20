@@ -1,89 +1,121 @@
-💤 Drowsiness Detection System using OpenCV & Mediapipe
+# 💩 Drowsiness Detection System using OpenCV & Mediapipe
 
-📸 Overview
-This project is a real-time drowsiness detection system built using OpenCV, Mediapipe, and Python.
+## 📸 Overview  
+This project is a **real-time drowsiness detection system** built using **OpenCV**, **Mediapipe**, and **Python**.  
 It tracks eye movement via facial landmarks and triggers an alarm if the user's eyes remain closed for too long — a crucial safety feature for drivers and machine operators.
 
+---
 
-🎯 Features
+## 🎯 Features  
+- ✅ Real-time eye tracking using **Mediapipe Face Mesh**  
+- ✅ Calculates **Eye Aspect Ratio (EAR)** to measure eye openness  
+- ✅ Plays an **alarm sound** when drowsiness is detected  
+- ✅ Captures **screenshots** and **logs timestamps** of drowsy moments  
+- ✅ Lightweight and fast — no external models to download  
+- ✅ Works with any webcam  
 
-✅ Real-time eye tracking using Mediapipe Face Mesh
-✅ Calculates Eye Aspect Ratio (EAR) to measure eye openness
-✅ Plays an alarm sound when drowsiness is detected
-✅ Captures screenshots and logs timestamps of drowsy moments
-✅ Lightweight and fast — no external models to download
-✅ Works with any webcam
+---
 
-📂 Project Structure
+## 📂 Project Structure  
+```
 .
-├── music.wav                 # Alarm sound file
-├── alerts/                   # Folder for saved screenshots and logs
-│   ├── drowsy_YYYYMMDD_HHMMSS.jpg
-│   └── log.txt
-├── drowsiness_detector.py     # Main detection script
-├── README.md                  # This file!
-├── requirements.txt
+├── music.wav                 # Alarm sound file  
+├── alerts/                   # Folder for saved screenshots and logs  
+│   ├── drowsy_YYYYMMDD_HHMMSS.jpg  
+│   └── log.txt  
+├── drowsiness_detector.py     # Main detection script  
+├── README.md                  # This file!  
+├── requirements.txt  
+```
 
+---
 
-🛠️ Installation
-📦 Requirements
-Python 3.x
-OpenCV
-Mediapipe
-SciPy
-Pygame
-NumPy
+## 🛠️ Installation  
 
-💾 Install Dependencies
+### 📦 Requirements  
+- Python 3.x  
+- OpenCV  
+- Mediapipe  
+- SciPy  
+- Pygame  
+- NumPy  
+
+### 💾 Install Dependencies  
+```bash
 pip install -r requirements.txt
+```
 
+---
 
-🚀 How to Run
-Clone this repository:
+## 🚀 How to Run  
 
-git clone https://github.com/yourusername/drowsiness-detector
-cd drowsiness-detector
-- Place an alarm sound file named music.wav in the project folder.
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/yourusername/drowsiness-detector
+   cd drowsiness-detector
+   ```
 
-Run the main script:
-python drowsiness_detector.py
-- Press q to quit the application.
+2. Place an alarm sound file named `music.wav` in the project folder.
 
-📊 How It Works
-- Face Detection & Landmark Tracking:
-- Uses Mediapipe's Face Mesh to locate eye landmarks in each video frame.
+3. Run the main script:
+   ```bash
+   python drowsiness_detector.py
+   ```
 
-Eye Aspect Ratio (EAR) Calculation:
-- Calculates EAR based on 6 key eye landmarks for both eyes.
-- If the EAR drops below a threshold for a set number of consecutive frames, the system considers the user drowsy.
+4. Press `q` to quit the application.
 
-Drowsiness Alert:
-- Plays a continuous alarm sound
-- Captures a screenshot
-- Logs the detection time in alerts/log.txt
+---
 
-📸 Example Detection
-“Eyes closed for too long — system triggers an alarm, logs the event, and saves a snapshot.”
+## 📊 How It Works  
 
-Log Example
+### Face Detection & Landmark Tracking  
+Uses **Mediapipe's Face Mesh** to locate eye landmarks in each video frame.
 
-Drowsiness detected at 2025-04-20 18:43:12
-Drowsiness detected at 2025-04-20 18:55:07
+### Eye Aspect Ratio (EAR) Calculation  
+Calculates EAR based on **6 key eye landmarks** for both eyes.  
+If the EAR drops below a threshold for a set number of consecutive frames, the system considers the user drowsy.
 
+### Drowsiness Alert  
+- Plays a continuous **alarm sound**  
+- Captures a **screenshot**  
+- Logs the **detection time** in `alerts/log.txt`  
 
-🎨 Future Ideas
-- Add a real-time graph for EAR values
-- Include head pose detection
-- Support multiple faces
-- Mobile camera streaming support
-- Voice notifications
+---
 
-🙌 Credits
-OpenCV
-Mediapipe
-Pygame
-SciPy
+## 📸 Example Detection  
 
+> _“Eyes closed for too long — system triggers an alarm, logs the event, and saves a snapshot.”_
 
+**Log Example**
+```
+Drowsiness detected at 2025-04-20 18:43:12  
+Drowsiness detected at 2025-04-20 18:55:07  
+```
 
-🌟 Star this repo if you like it!
+---
+
+## 🎨 Future Ideas  
+
+- Add a **real-time graph** for EAR values  
+- Include **head pose detection**  
+- Support **multiple faces**  
+- **Mobile camera streaming** support  
+- **Voice notifications**  
+
+---
+
+## 👌 Credits  
+
+- [OpenCV](https://opencv.org/)  
+- [Mediapipe](https://mediapipe.dev/)  
+- [Pygame](https://www.pygame.org/news)  
+- [SciPy](https://scipy.org/)  
+
+---
+
+## 📃 License  
+This project is licensed under the **MIT License**.
+
+---
+
+## 🌟 Star this repo if you like it!
