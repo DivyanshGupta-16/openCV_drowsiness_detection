@@ -1,10 +1,12 @@
 💤 Drowsiness Detection System using OpenCV & Mediapipe
+
 📸 Overview
 This project is a real-time drowsiness detection system built using OpenCV, Mediapipe, and Python.
 It tracks eye movement via facial landmarks and triggers an alarm if the user's eyes remain closed for too long — a crucial safety feature for drivers and machine operators.
 
 
 🎯 Features
+
 ✅ Real-time eye tracking using Mediapipe Face Mesh
 ✅ Calculates Eye Aspect Ratio (EAR) to measure eye openness
 ✅ Plays an alarm sound when drowsiness is detected
